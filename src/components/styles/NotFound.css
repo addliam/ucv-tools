@@ -1,0 +1,51 @@
+div#not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+div.not-found{
+    display: flex;
+    justify-content: center;
+}
+h1#codigo{
+    font-size: 350px;
+    margin: 0;
+    padding: 0;
+    color: #C4C4C4;
+    letter-spacing: 1.7rem;
+}
+img#vallejo{
+    width: 15em;
+    height: auto;
+    position: absolute;
+    top: 30%;
+}
+div#not-found-container span{
+    display: block;
+    width: 24em;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}
+div.text-not-found{
+    display: flex;
+    flex-direction: column;
+}
+a#volver-inicio{
+    display: flex;
+    align-items: center;
+    color: #2574EA;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-align: left;
+}
+a#volver-inicio::before{
+    content: '<';
+    font-weight: 800;
+    margin-right: 4px;
+    padding-bottom: 4px;
+}

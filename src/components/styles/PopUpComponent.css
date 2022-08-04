@@ -1,0 +1,15 @@
+div.pop-up{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    color: #494949;
+    padding: .5em;
+    position: absolute;
+    left: 2px;
+    bottom: 3em;
+}
+.pop-up h3,p{
+    padding: 0;
+    margin: 0;
+}

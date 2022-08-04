@@ -1,0 +1,56 @@
+div#salas-head-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+h3#head-title{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: .8rem;
+    font-size:2.6em;
+    color: #2E2E2E;
+}
+div.salas-buttons-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    gap: 1em;
+    box-sizing: border-box;
+}
+div.salas-buttons-container button{
+    border: none;
+    font-size: .9rem;
+    width: 10em;
+    height: 2.4em;
+    border-radius: 8px;
+    box-shadow: 5px 10px 20px -6px rgb(0 0 0 / 15%);
+}
+div.salas-buttons-container button:hover{
+    cursor: pointer;
+    box-shadow:none;
+}   
+button#actualizar{
+    border: 2.5px solid #22406D;
+    background-color: white;
+    color: #22406D;
+}
+button#actualizar:hover{
+    background-color: #2574EA;
+    border-color: #2574EA;
+    color: white;
+}
+button#agregar{
+    background-color: #22406D;
+    color: white;
+}
+button#agregar:hover{
+    background-color: #235eb8;
+}
+div#pop-up-add-room-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}

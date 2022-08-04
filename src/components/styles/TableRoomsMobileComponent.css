@@ -1,0 +1,78 @@
+div#table-rooms-mob{
+    width: 20.625em;
+}
+div#root{
+    padding: 4.5%;
+}
+div#table-rooms-container-mob{
+    width: 20.625em;
+}
+table{
+    width: inherit;
+    border-spacing: 0px;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color:#808083;
+    border-radius: 6px;
+    box-shadow: 2px 2px 12px 4px rgba(0, 0, 0,0.25);
+}
+a{
+    text-decoration: none;
+    color:#2574EA;
+}
+table thead{
+    display: none;
+}
+.item-container-mob{
+    width: inherit;
+}
+
+td {
+    font-size: 0.875em;
+    margin-bottom: 20px;
+}
+tr.row-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6.65em;
+    padding-top: 1.625em;
+}
+table tbody tr:nth-child(even){
+    background: #F5F5F5;
+}
+table tbody tr td:nth-child(1)::before{
+    content: "Numero ID";
+}
+table tbody tr td:nth-child(2)::before{
+    content: "Curso";
+}
+table tbody tr td:nth-child(3)::before{
+    content: "Link";
+}
+table tbody tr td:nth-child(4)::before{
+    content: "";
+}
+table tbody tr td:before{
+    position: absolute;
+    font-weight: bold;
+    left: 2.25em;
+}
+button.delete-button {
+    display: block;
+    border: none;
+    background-color:#FC3535;
+    border-radius: 4px;
+    width: 1.875em;
+    padding: 0;
+    height: 1.875em;
+    align-content: center;
+    margin-left: auto;
+    margin-right: 2em;
+}
+button.delete-button:hover{
+    cursor: pointer;
+    background-color: #181313;
+}
+img.delete-button-image {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,134 @@
+.bloque{
+    height: 24rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloque:nth-child(even){
+    background-color: #F1F1F1;
+}
+nav.navbar-master-container{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 4.5rem;
+    top: 0;
+}
+.bloque-content{
+    width: 56rem;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+div.main{
+    margin-top:4.5rem;
+}
+img#meeting-abstract{
+    margin-right: 3.2rem;
+}
+#bloque-1-content div#text-content{
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h2.blue-title{
+    font-size: 2.5rem;
+    color: #22406D;
+    margin-top: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+h2#bloque-3-title{
+    margin-top: 0;
+}
+div#bloque-2-content span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+div#bloque-3-content span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+div#bloque-3-content div#text-content{
+    text-align: right;
+}
+div#bloque-2-content div#text-content{
+    margin-right: 8rem;
+}
+h2#app-title{
+    color: #212121;
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+}
+div#text-content{
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+div#text-content span{
+    display: block;
+}
+button#comienza-ahora{
+    background-color: red;
+    color: white;
+    height: 2.2em;
+    width: 10em;
+    font-size: .92em;
+    border:none;
+    padding: 0 1.25em;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+button#comienza-ahora:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+div#bloque-4-content{
+    flex-direction: column;
+}
+section#bloque-4{
+    align-items: initial;
+}
+div#bloque-4-content div#text-content{
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+span#bloque-4-description{
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+h2#bloque-4-title{
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: .6rem;
+}
+.item-container
+.item{
+    background-color: yellow;
+    width: 4.6rem;
+    height: 5.5rem;
+}
+.item-container span{
+    text-align: center;
+    display: block;
+    margin-top: .4em;
+    font-size: .8rem;
+}
+div#recursos-investigacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+}
+.item-container{
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    align-items: center;
+}

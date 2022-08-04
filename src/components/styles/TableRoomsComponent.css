@@ -1,0 +1,93 @@
+ /* red color #FC3535 */
+ /* <a target="_blank" href="https://icons8.com/icon/99950/delete">Delete</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+ table.table-rooms{
+    width: 45.3125em;
+    border-spacing: 0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px 10px -5px rgb(0 0 0 / 15%);
+}
+div#table-rooms-container{
+    width: 100%;
+    /* height: 34rem; */
+    min-height: 20rem;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.table-rooms thead{
+    background-color: #36304A;
+    height: 3.25em;
+}
+.row-description{
+    font-size: 1.375em;
+    font-weight: 400;
+    color: white;
+}
+tr.row-item{
+    height: 2.625em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    color: #808083;
+}
+.row-item a{
+    /* font-weight: 500; */
+    text-decoration: none;
+    color: #2574EA;
+}
+.row-item a:hover{
+    text-decoration: none;
+    color: #5e96ea;
+}
+tbody tr:nth-child(even) {
+    background-color:#F5F5F5;
+}
+th#description-id{
+    border-radius: 10px 0px 0px 0px;
+    width: 7.5em;
+}
+th#description-curso{
+    width: 16em;
+}
+th#description-link{
+    width: 17.5em;
+}
+th#description-eliminar{
+    width: 4.5625em;
+    border-radius: 0px 10px 0px 0px;
+}
+button.delete-button {
+    border: none;
+    background-color:#FC3535;
+    border-radius: 4px;
+    width: 1.875em;
+    padding: 0;
+    height: 1.875em;
+    align-content: center;
+}
+button.delete-button:hover{
+    cursor: pointer;
+    background-color: #CD2727;
+}
+img.delete-button-image {
+    display: block;
+    margin: auto;
+}
+button#close-add-room-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: .5rem .5rem 0 0;
+    width: 30px;
+    height: 30px;
+    background-color: #FC3535;
+    color: white;
+    border: none;
+}
+button#close-add-room-button:hover{
+    cursor: pointer;
+    background-color: #B12C2C;
+}

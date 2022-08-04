@@ -1,0 +1,79 @@
+div#navbar-container{
+    width: 100%;
+    height: 4.5rem;
+    color: white;
+    background-color: #1D365C;
+    display: flex;
+}
+
+div#site-logo{
+    width: 22.5em;
+    display: flex;
+    align-items: center;
+}
+a#site-logo-anchor{
+    display: flex;
+    align-items: center;
+    margin-left: 2.5em;
+    height: 3em;
+    gap: 0.26em;
+}
+a#site-logo-anchor:hover{
+    color: #e1e1e1;
+}
+span#logo-title{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: inherit;
+}
+img#logo-image {
+    display: block;
+    margin-top: 5px;
+}
+ul{
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* make this when screen is higher than 1200 px */
+ul#list-container{
+    display: list-item;
+}
+div#menu-button{
+    display: none;
+}
+li.navbar-element{
+    width: 10em;
+    float: left;
+    color: inherit;
+}
+a.navbar-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 4.5em;
+    box-sizing: border-box;
+}
+a.navbar-item:hover{
+    background-color: #22406D;
+    border-bottom: 6px inset #00BFF3;
+}
+.navbar-item.selected{
+    background-color: #285ba7;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav.navbar-master-container{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 4.5rem;
+    top: 0;
+    z-index: 999;
+}
