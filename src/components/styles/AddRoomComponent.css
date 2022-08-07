@@ -8,7 +8,7 @@ div#add-room-container{
     justify-content: center;
 }
 div.add-room{
-    margin-top: 1.4em;
+    margin-top: 3em;
     background-color: white;
     border-radius: 20px;
     width: 50em;
@@ -61,14 +61,19 @@ form#add-form input{
 form#add-form input:focus{
     outline-color:#2574EA;
 }
+p.form-error{
+    margin-top: 0;
+    margin-bottom: .2em;
+    color: #B12C2C;
+}
 label.label-add-room{
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 1.5em;
 }
 p#terminos-condiciones{
-    margin-top: 0;
-    margin-bottom: 1.5em;
+    margin-top: .65em;
+    margin-bottom: 1em;
     color: #808083;
 }
 a#terminos-condiciones-link{

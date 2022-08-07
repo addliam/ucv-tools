@@ -1,8 +1,20 @@
 export const createRoom = (topic,link) =>{
+    const MAX_STR_LENGTH = 32; 
+    const isValidLength = (str) => {
+        return (str.length <= MAX_STR_LENGTH && str.length > 0)
+    }
+    const isValidLink = (str) => {
+        return ((isValidLength(str)) && (str.startsWith('http')))
+    }
     var allCurrentRooms = getAllRooms();
-    if (allCurrentRooms != null){
+    if (allCurrentRooms != null && isValidLength(topic) && isValidLink(link)){
         allCurrentRooms.push(topic,link);
-        localStorage.setItem('rooms',JSON.stringify(allCurrentRooms));    
+        localStorage.setItem('rooms',JSON.stringify(allCurrentRooms));
+        // 0 means success
+        return 0;    
+    }else{
+        // 1 means failure
+        return 1;
     }
 }
 export const getAllRooms = () =>{

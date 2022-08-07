@@ -5,6 +5,15 @@ import React from 'react'
 import apunteExample from './sources/modelo_apunte_ucvTools.png'
 import meetingAbstract from './sources/vector_online_meetup_low.webp'
 import chicosEstudiando from './sources/vector_chicos_libro_estudiando_low.webp'
+import myLoftLogo from './sources/investigation/my_loft_logo.png'
+// import alphaCloudLogo from './sources/investigation/alphaCloudLogo.jfif'
+import EBSCOhostLogo from './sources/investigation/EBSCOhostLogo.jfif'
+import biblioTechniaLogo from './sources/investigation/biblioTechniaLogo.jfif'
+import EngineeringPlusLogo from './sources/investigation/EngineeringPlusLogo.jfif'
+import ExLibrisPrimoLogo  from './sources/investigation/ExLibrisPrimoLogo.jfif'
+import GaleOneFileComputerScienceLogo from './sources/investigation/GaleOneFileComputerScienceLogo.jfif'
+
+
 export const HomePageComponent = () => {
   return (
     <div id='homepage-container'>
@@ -49,39 +58,39 @@ export const HomePageComponent = () => {
                     <div id="recursos-investigacion">
                         <div className="item-container">
                             <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                                <img src={myLoftLogo} alt="myloft library logo" />
                             </div>
                             <span className='item-title'>MyLoft Library</span>
                         </div>
                         <div className="item-container">
-                            <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                            <div className='item' id='bibliotechnia'>
+                                <img src={biblioTechniaLogo} alt="biblioTechnia logo" />
                             </div>
-                            <span className='item-title'>UCV Biblioteca</span>
+                            <span className='item-title'>Bibliotechnia</span>
                         </div>
                         <div className="item-container">
-                            <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                            <div className='item' id='ebscohost'>
+                                <img src={EBSCOhostLogo} alt="EBSCOhost logo" />
                             </div>
-                            <span className='item-title'>IBM recursos</span>
+                            <span className='item-title'>EBSCOhost</span>
                         </div>
                         <div className="item-container">
-                            <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                            <div className='item' id='engineering-plus'>
+                                <img src={EngineeringPlusLogo} alt="Engineering Plus logo" />
                             </div>
-                            <span className='item-title'>UNAM biblioteca</span>
+                            <span className='item-title'>Engineering Plus</span>
                         </div>
                         <div className="item-container">
-                            <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                            <div className='item' id='galeonefile-computer-science'>
+                                <img src={GaleOneFileComputerScienceLogo} alt="GaleOneFile Computer Science" />
                             </div>
-                            <span className='item-title'>PUCP Library</span>
+                            <span className='item-title'>GaleoOneFile</span>
                         </div>
                         <div className="item-container">
-                            <div className='item' id='myloft'>
-                                {/* img from differents colors */}
+                            <div className='item' id='ex-libris-primo'>
+                                <img src={ExLibrisPrimoLogo} alt="ExLibrisPrimo logo" />
                             </div>
-                            <span className='item-title'>Guia de ensayos </span>
+                            <span className='item-title'>ExLibrisPrimo</span>
                         </div>
                     </div>
                 </div>

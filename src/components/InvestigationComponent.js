@@ -20,6 +20,20 @@ import GaleOneFileComputerScienceLogo from './sources/investigation/GaleOneFileC
 const arrayImagesCarousel = [laboratoryImage,girlCodingImage,chineseLaboratoryImage,techCodingImage];
 const LENGTH_ARRAY_IMAGES = arrayImagesCarousel.length;
 const LAST_INDEX_ARRAY = LENGTH_ARRAY_IMAGES - 1 ;
+// const EXAMPLE_DESCRIPTION = 'Company that makes things with the lazy fox. Encourage people has lost their mind, you will wind many resources. The lazy quick brown fox tried to chase a rabbit hole.';
+// const EXAMPLE_DETAIL = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident itaque quos, obcaecati ratione velit ipsum.';
+const myLoftResource = {logo:myLoftLogo,title:'MyLoft Library',description:'Plataforma donde el ecosistema de todos las colecciones y servicios digitales están contenidos, proporcionando un acceso perfecto y confiable.',detail:'Accede a todos los recursos de la Biblioteca Digital de forma rápida y sencilla.',link:'https://app.myloft.xyz/'};
+
+const BiblioTechniaResource = {logo:biblioTechniaLogo,title:'BiblioTechnia',description:'Bibliotechnia integra contenido multidisciplinario de las más importantes editoriales nacionales e internacionales en una plataforma de gestión de derechos digitales.',detail:'Incluye alrededor de 20,000 títulos de más de 50 casas editoriales y es proveedor de alrededor de 840 bibliotecas en América Latina.',link:'https://www.bibliotechnia.com.mx/Institucional/catalogo'};
+
+const EBSCOhostResource = {logo:EBSCOhostLogo,title:'EBCSOhost',description:'EBSCOhost es una plataforma intuitiva de investigación en línea utilizada por miles de instituciones y millones de usuarios en todo el mundo.',detail:'Los usuarios pueden ver, guardar, imprimir, enviar por correo electrónico o exportar citas en muchos formatos.',link:'https://search.ebscohost.com/'};
+
+const EngineeringPlusResource = {logo:EngineeringPlusLogo,title:'Engineering Plus',description:'Base de datos especializada en Ingenierías, conformada por más de mil revistas especializadas. Incluye información sobre tecnologías.',detail:'Visualice las conexiones existentes entre los términos de búsqueda y los temas, y vea artículos relacionados con esos temas.',link:'https://go.gale.com/'};
+
+const GaleOneFileComputerScienceResource = {logo:GaleOneFileComputerScienceLogo,title:'GaleOneFile ComputerScience',description:'Base de datos especializada en Ingenierías, conformada por más de mil revistas especializadas. Incluye información sobre tecnologías.',detail:'Explore nuestro índice de temas y encuentre artículos etiquetados con términos de temas específicos.',link:'https://go.gale.com/'};
+
+const ExLibrisPrimoResource = {logo:ExLibrisPrimoLogo,title:'ExLibris Primo',description:'Primo es el servicio de descubrimiento de cara al usuario de Ex Libris, el cual proporciona un acceso centralizado y personalizado a todos los recursos en sus redes de servicios.',detail:'Primo es una solución única para la búsqueda de libros impresos y electrónicos, videos, artículos, archivos digitales y más.',link:'https://ucv.primo.exlibrisgroup.com/discovery/'};
+// constraints 166 - 111
 
 const ResourceItemComponent = (props) => {
     const [showDetails, setShowDetails] = useState(false);
@@ -80,15 +94,6 @@ export const InvestigationComponent = () => {
             setIndexOfCarouselImage(0);
         }
     },[indexOfCarouselImage])
-    const EXAMPLE_DESCRIPTION = 'Company that makes things with the lazy fox. Encourage people has lost their mind, you will wind many resources. The lazy quick brown fox tried to chase a rabbit hole.';
-    const EXAMPLE_DETAIL = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident itaque quos, obcaecati ratione velit ipsum.';
-
-    const myLoftResource = {logo:myLoftLogo,title:'MyLoft Library',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
-    const BiblioTechniaResource = {logo:biblioTechniaLogo,title:'BiblioTechnia',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
-    const EBSCOhostResource = {logo:EBSCOhostLogo,title:'EBCSOhost',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
-    const EngineeringPlusResource = {logo:EngineeringPlusLogo,title:'Engineering Plus',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
-    const GaleOneFileComputerScienceResource = {logo:GaleOneFileComputerScienceLogo,title:'GaleOneFile ComputerScience',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
-    const ExLibrisPrimoResource = {logo:ExLibrisPrimoLogo,title:'ExLibris Primo',description:EXAMPLE_DESCRIPTION,detail:EXAMPLE_DETAIL,link:'http://localhost:3000'};
 
   return (
     <div id='investigation-container'>
