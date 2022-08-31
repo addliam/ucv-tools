@@ -33,6 +33,7 @@ img#meeting-image{
     border-bottom-left-radius: 20px;
 }
 h3#agregar-sala-title{
+    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 2em;
@@ -72,6 +73,8 @@ label.label-add-room{
     margin-bottom: 1.5em;
 }
 p#terminos-condiciones{
+    font-size: 14px;
+    text-align: center;
     margin-top: .65em;
     margin-bottom: 1em;
     color: #808083;
@@ -115,4 +118,53 @@ div#pop-up-success-container h4{
     margin: .3em 0;
     padding: 0;
     color: #2574EA;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+div#add-room-container div#image-container{
+    display: none;
+}
+label.label-add-room {
+    font-size: 1rem;
+}
+div#add-room-container{
+    height: 300vh;
+}
+div.add-room{
+    margin-top: 1.5rem;
+    width: 86.66%;
+    height: auto;
+    border-radius: 12px;
+}
+div#form-container{
+    margin: 0;
+    margin-bottom: .75em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    box-sizing: border-box;
+}
+h3#agregar-sala-title{
+    font-size: 1.5em;
+    margin: 2.5rem 1.5rem;
+}
+div#form-content{
+    width: auto;
+    height: max-content;
+}
+form#add-form{
+    /* width: min-content; */
+    width: 76vw;
+}
+button#close-add-room-button{
+    position: absolute;
+    right: 24px;
+    padding: 8px;
+}
+p.form-error{
+    text-align: center;
+    font-size: 14px;
+}
+
+
 }

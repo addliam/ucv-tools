@@ -1,9 +1,10 @@
 import './styles/TableRoomsComponent.css';
 import React, {useEffect, useState} from 'react';
 import deleteIco from './sources/delete_icon_24x24.png';
-import '../components/styles/SalasZoomPage.css'
+import './styles/SalasZoomPage.css'
 import {AddRoomComponent} from '../components/AddRoomComponent'
-import { getAllRooms, createDatabaseIfNotExists, ShowRoomsOnConsole, deleteRoomByID} from '../components/LocalStorageRoomsConnection'
+import { getAllRooms, createDatabaseIfNotExists, deleteRoomByID} from '../components/LocalStorageRoomsConnection'
+// import {resetStatesToDefault} from '../components/AddRoomComponent'
 
 // const exampleRooms = ['Competencia comunicativa', 'https://zoom.us/j/5551112222', 'Matematica I', 'https://zoom.us/j/5551112222', 'Fundamentos Programacion', 'https://zoom.us/j/5551112222', 'Web Development', 'https://zoom.us/j/5551112223']
 
@@ -32,12 +33,12 @@ export const RowItemComponent = (props) => {
     }
   return (
     <tr className='row-item' id={itemId}>
-        <td className='item-id'>{itemId}</td>
-        <td className='item-curso'>{itemCurso}</td>
-        <td className='item-link'>
+        <td data-title='Id' className='item-id'>{itemId}</td>
+        <td data-title='Curso' className='item-curso'>{itemCurso}</td>
+        <td data-title='Link' className='item-link'>
             <a target="_blank" rel="noopener noreferrer" href={itemLink}>{itemLink}</a>
             </td>
-        <td className='item-eliminar'>
+        <td data-title='Eliminar' className='item-eliminar'>
             <button onClick={()=>(deleteElementById(itemId))} className='delete-button' type='button'><img className='delete-button-image' height={'20'} width={'20'} alt='delete-icon' src={deleteIco}></img></button>
         </td>
     </tr> 
@@ -68,26 +69,31 @@ export const TableRoomsComponent = () => {
       return () => {
       }
     }, [])
-    const actualizarButtonHandler = () =>{
-        ShowRoomsOnConsole();
-        refreshArrayOfRooms();
-    }
+    // const actualizarButtonHandler = () =>{
+    //     ShowRoomsOnConsole();
+    //     refreshArrayOfRooms();
+    // }
     const AgregarButtonHandler = () => {
         console.log("Agregar Pressed")
         setShowAddRoomPopUp(true);
     }
+    const closeAddRoomButtonHandler = () => {
+        setShowAddRoomPopUp(false);
+        // AddRoomComponent.props.resetStates();
+    }
+
     const closeAddRoomButton = (
-        <button id='close-add-room-button' onClick={(e)=>(setShowAddRoomPopUp(false))}>X</button>
+        <button id='close-add-room-button' onClick={(e)=>(closeAddRoomButtonHandler())}>X</button>
     )
   return (
     <>
     <div id='pop-up-add-room-container' style={{position:'fixed', display: showAddRoomPopUp ? 'initial':'none'}}>
-        <AddRoomComponent children={closeAddRoomButton}/>
+        <AddRoomComponent children={closeAddRoomButton} />
     </div>
         <div id='salas-head-container'>
             <h3 id='head-title'>MIS SALAS DE ZOOM</h3>
             <div className='salas-buttons-container'>
-                <button onClick={()=>{actualizarButtonHandler()}} id='actualizar'>Actualizar</button>
+                {/* <button onClick={()=>{actualizarButtonHandler()}} id='actualizar'>Actualizar</button> */}
                 <button onClick={()=>{AgregarButtonHandler()}} id='agregar'>Agregar</button>
             </div>
         </div>

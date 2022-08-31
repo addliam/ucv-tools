@@ -18,6 +18,11 @@ export const AddRoomComponent = (props) => {
     const [showSuccessPopUp, setShowSuccessPopUp] = useState(false);
     const [showFormError, setShowFormError] = useState(false);
 
+    // const resetStatesToDefault = () =>{
+    //     setShowFormError(false);
+    //     setShowSuccessPopUp(false);
+    // }
+
     const AgregarButtonPressed = () =>{
         const POP_UP_DURATION = 2500;
         console.log("Form Agregar pressed! ")

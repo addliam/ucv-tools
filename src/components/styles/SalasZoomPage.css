@@ -54,3 +54,13 @@ div#pop-up-add-room-container{
     width: 100%;
     height: 100vh;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    h3#head-title{
+        font-size: 2em;
+    }
+    div.salas-buttons-container button {
+        height: 48px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

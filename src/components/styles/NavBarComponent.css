@@ -77,3 +77,11 @@ nav.navbar-master-container{
     top: 0;
     z-index: 999;
 }
+@media screen and (max-width: 768px){
+nav.navbar-master-container{
+    width: 100vw;
+}        
+ul#list-container{
+    display: none;
+}
+}
