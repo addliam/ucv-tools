@@ -119,6 +119,13 @@ div#pop-up-success-container h4{
     padding: 0;
     color: #2574EA;
 }
+p#salas-zoom-decription{
+    margin: 0;
+    max-width: 86.6%;
+    color: #474747;
+    font-size: 1rem;
+    text-align: center;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 

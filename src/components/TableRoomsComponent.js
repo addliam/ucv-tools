@@ -92,6 +92,7 @@ export const TableRoomsComponent = () => {
     </div>
         <div id='salas-head-container'>
             <h3 id='head-title'>MIS SALAS DE ZOOM</h3>
+            <p id='salas-zoom-decription'>Organiza los links de tus salas de zoom para cada curso y accede de manera rápida.</p>
             <div className='salas-buttons-container'>
                 {/* <button onClick={()=>{actualizarButtonHandler()}} id='actualizar'>Actualizar</button> */}
                 <button onClick={()=>{AgregarButtonHandler()}} id='agregar'>Agregar</button>
