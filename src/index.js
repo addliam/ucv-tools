@@ -17,6 +17,7 @@ import { SalasZoomPage } from './pages/SalasZoomPage';
 import { NotFound } from './pages/NotFound';
 import { MiPerfilPage } from './pages/MiPerfilPage';
 import { InvestigacionPage } from './pages/InvestigacionPage';
+import { CrearSesionesPage } from './pages/CrearSesionesPage';
 // import { NavBarComponent } from './components/NavBarComponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,6 +30,7 @@ export const Index = () => {
       <Route path="/salas-zoom" element={<SalasZoomPage />}/>
       <Route path="/investigacion" element={<InvestigacionPage />}/>
       <Route path="/mi-perfil" element={<MiPerfilPage />}/>
+      <Route path="/crear-sesiones" element={<CrearSesionesPage />}/>
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>

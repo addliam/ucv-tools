@@ -51,7 +51,7 @@ export const NavBarComponent = (props) => {
             <ul id='list-container'>
                 <NavBarElement ident='inicio' reference='/inicio' name='Inicio' active={props.active}/>
                 <NavBarElement ident='salas-zoom' reference='/salas-zoom' name='Salas Zoom' active={props.active}/>
-                <NavBarElement ident='mis-apuntes' reference='/apuntes' name='Mis apuntes' active={props.active}/>
+                <NavBarElement ident='crear-sesiones' reference='/crear-sesiones' name='Crear sesiones' active={props.active}/>
                 <NavBarElement ident='investigacion' reference='/investigacion' name='Investigacion' active={props.active}/>
                 <NavBarElement ident='mi-perfil' reference='/mi-perfil' name='Mi perfil' active={props.active}/>
             </ul>
