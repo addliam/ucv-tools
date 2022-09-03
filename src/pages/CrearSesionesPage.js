@@ -21,7 +21,7 @@ export const CrearSesionesPage = () => {
             <p id='instruction'>Descarga el archivo y ubicalo en la carpeta UCV raiz.</p>
             <button id="download-beta">
                 <img id="download-icon" src={downloadWhiteIcon} alt="download beta version crear sesiones ucv tools" />
-                <a href="https://drive.google.com/file/d/1MvJrQ64pMxxClAQlXqhqSXb9jpcV5qgw/view?usp=sharing">
+                <a href="https://file.io/g133Mx7orR1p">
                     Descargar version Beta
                 </a>
             </button>
