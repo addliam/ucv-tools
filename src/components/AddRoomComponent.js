@@ -25,8 +25,8 @@ export const AddRoomComponent = (props) => {
 
     const AgregarButtonPressed = () =>{
         const POP_UP_DURATION = 2500;
-        console.log("Form Agregar pressed! ")
-        console.log(`Curso: ${cursoValue} - Link: ${linkValue}`);
+        // console.log("Form Agregar pressed! ")
+        // console.log(`Curso: ${cursoValue} - Link: ${linkValue}`);
         // comunicate here with localStorage
         if (createRoom(cursoValue,linkValue) === 0){
             // If success 

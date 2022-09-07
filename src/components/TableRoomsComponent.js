@@ -74,7 +74,7 @@ export const TableRoomsComponent = () => {
     //     refreshArrayOfRooms();
     // }
     const AgregarButtonHandler = () => {
-        console.log("Agregar Pressed")
+        // console.log("Agregar Pressed")
         setShowAddRoomPopUp(true);
     }
     const closeAddRoomButtonHandler = () => {

@@ -1,13 +1,22 @@
 export const createRoom = (topic,link) =>{
     const MAX_STR_LENGTH = 32; 
+    const VALID_LINK_START = "https://zoom.us/j/";
+    if (link.startsWith("zoom.us/j/")){
+        let roomCodeString="";
+        // get roomCode
+        for (let character of link){
+            let characterInteger = parseInt(character);                    
+            if (!isNaN(characterInteger)){
+                roomCodeString += `${characterInteger}`;
+            }
+        }
+        link = `${VALID_LINK_START}${roomCodeString}`;
+    }
     const isValidLength = (str) => {
         return (str.length <= MAX_STR_LENGTH && str.length > 0)
     }
-    const isValidLink = (str) => {
-        return ((isValidLength(str)) && (str.startsWith('http')))
-    }
     var allCurrentRooms = getAllRooms();
-    if (allCurrentRooms != null && isValidLength(topic) && isValidLink(link)){
+    if (allCurrentRooms != null && isValidLength(topic)){
         allCurrentRooms.push(topic,link);
         localStorage.setItem('rooms',JSON.stringify(allCurrentRooms));
         // 0 means success
@@ -33,28 +42,13 @@ export const deleteRoomByID = (topicId) => {
     }
     localStorage.setItem('rooms',JSON.stringify(fixedRooms))
 }
-// export const deleteRoom = (topic) =>{
-//     var myRooms = getAllRooms();
-//     var fixedRooms = [...myRooms];
-//     var i;
-//     var indxToDelete;
-//     // iterate just over the topics indx [0,2,4,6]
-//     for (i = 0;i < myRooms.length; i+=2){
-//         if (myRooms[i] === topic){
-//             indxToDelete = i;
-//             console.log(`INDICE: ${i}`);
-//             fixedRooms.splice(i,2);
-//         }
-//     }
-//     localStorage.setItem('rooms',JSON.stringify(fixedRooms))
-// }
 export const ShowRoomsOnConsole = () =>{
     console.log(getAllRooms());
 }
 export const createDatabaseIfNotExists = () =>{
     const newEmptyRoom = [];
     if (getAllRooms() === null){
-        console.log("Creating new object Rooms");
+        // console.log("Creating new object Rooms");
         localStorage.setItem('rooms',JSON.stringify(newEmptyRoom));
     }else{
         console.log("Object Rooms already created");
